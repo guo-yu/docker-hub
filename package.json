@@ -1,0 +1,29 @@
+{
+  "name": "docker-hub",
+  "version": "0.0.0",
+  "description": "the docker hub sdk based on Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turingou/docker-hub.git"
+  },
+  "keywords": [
+    "docker",
+    "docker-hub",
+    "hub",
+    "paas",
+    "api",
+    "sdk",
+    "docker-sdk",
+    "docker-api"
+  ],
+  "author": "turing <o.u.turing@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turingou/docker-hub/issues"
+  },
+  "homepage": "https://github.com/turingou/docker-hub"
+}
