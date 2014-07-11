@@ -1,4 +1,4 @@
-module.exports = {
+exports.v1 = {
   auth: {
     method: 'put',
     url: '/v1/repositories/{{namespace}}/{{repository}}/auth'

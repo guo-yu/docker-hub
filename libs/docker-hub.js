@@ -4,5 +4,6 @@ module.exports = hub;
 
 function hub() {
   this.host = 'https://index.docker.io';
-  return new sdk(this.host, apis, auth || {});
+  this.apiVersion = 'v1';
+  return new sdk(this.host, apis[this.apiVersion], {});
 }

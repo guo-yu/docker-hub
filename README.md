@@ -1,16 +1,29 @@
 ## docker-hub ![npm](https://badge.fury.io/js/docker-hub.png)
 
-the docker hub sdk based on Node.js
+a docker hub sdk based on Node.js
 
 ### Installation
 ````
-$ [sudo] npm install docker-hub
+$ npm install docker-hub
 ````
-
 
 ### Example
 ````javascript
-var docker-hub = require('docker-hub');
+var dockerhub = require('docker-hub');
+var hub = new dockerhub;
+
+// lowlevel
+hub.get('v1/users', {}, function(err, res, body) {
+  // body...
+});
+
+// hightlevel
+hub.auth({
+  namespace: 'turing',
+  repository: 'ubuntu'
+}, function(err, res, body){
+  // body...
+});
 ````
 
 ### API
